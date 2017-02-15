@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagrindinis</title>
+        <meta charset="utf-8" lang="lt">
+        <style>
+            .nav{
+                width: 100%;
+                height: 35px;
+                background-color: #f2f5f7;
+            }
+            ul{
+                padding: 0px;
+                margin: 0px;
+            }
+            ul#navmenu, ul#sub, ul#client{
+                list-style-type: none;
+            }
+            ul#client li{
+                width: 125px;
+                text-align: center;
+                position: relative;
+                float: right;
+                background-color: #f2f5f7;
+            }
+            ul#client a{
+                width: 125px;
+                display: block;
+                text-decoration: none;
+                color: #555555;
+                text-transform: uppercase;
+                font:bold 12px sans-serif;
+                height: 35px;
+                line-height: 35px;
+            }
+            ul#navmenu li{
+                background-color: #f2f5f7;
+                width: 125px;
+                text-align: center;
+                position: relative;
+                float: left;
+            }
+            ul#navmenu a{
+                width: 125px;
+                display: block;
+                text-decoration: none;
+                color: #555555;
+                text-transform: uppercase;
+                font:bold 12px sans-serif;
+                height: 35px;
+                line-height: 35px;
+            }
+            ul#navmenu #sub{
+                display: none;
+                position: absolute;
+            }
+            ul#navmenu li:hover #sub{
+                display: block;
+            }
+            ul#navmenu li:hover > a{
+                background-color: #7dc6dd;
+            }
+            ul#client li:hover > a{
+                background-color: #7dc6dd;
+            }
+            #arrow{
+                margin-left: 10px;
+                font-size: 10px;
+            }
+            .banner{
+                width: 100%;
+                height: 100%;
+                background-color: #7dc6dd;
+                background-image:url('remote-it-support.jpg');
+                background-repeat: no-repeat;
+                background-position:100% center;
+                
+            }
+            .social{
+                width:96px;
+                height: 48px;
+                background-color: #f2f5f7;
+                float: right;
+                border-bottom-left-radius: 5px;
+            }
+            .social img{
+                width:40px; 
+                height:40px;
+                float: right;
+                padding: 4px;
+            }
+            .social img:hover{
+                background-color: #7dc6dd;
+            }
+            .banner .header h1{
+                margin: 0px;
+                padding: 30px;
+                color: #fff;
+                font: bold 48px sans-serif;
+                text-shadow: 1px 0px 3px black;
+            }
+            .banner .header p{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                margin: 0px;
+                font: 26px sans-serif;
+                color: #555555;
+            }
+            .banner .header a{
+                color: #e0f1fc;
+                text-decoration: none;
+                font: 20px sans-serif;
+                display: block;
+                padding: 30px;
+            }
+            .banner .header a:hover{
+                text-decoration: underline;
+            }
+            .content{
+                width: 100%;
+                height: 250px;
+            }
+            .content #c1{
+                height: 100%;
+                background: #e0f1fc;
+                width:calc(100% / 3);
+                box-sizing: border-box;
+                float: left;
+            }
+            .content #c2{
+                height: 100%;
+                background: #e0f1fc;
+                width:calc(100% / 3);
+                box-sizing: border-box;
+                float: left;
+            }
+            .content #c3{
+                height: 100%;
+                background: #e0f1fc;
+                width:calc(100% / 3);
+                box-sizing: border-box;
+                float: right;
+            }
+            .content p{
+                margin:0px;
+                padding: 20px;
+                text-align: justify;
+                font:14px/20px sans-serif;
+                color: #555555;
+            }
+            .content h1{
+                text-align: center;
+                font:25px sans-serif;
+                color: #555555;
+            }
+            .footer{
+                height: 180px;
+                width: 100%;
+                background-color: #7dc6dd;
+            }
+            #contact{
+                width: calc(100%/3);
+                height: 100%;
+            }
+            #contact p{
+                margin:0px;
+                padding: 20px;
+                text-align: justify;
+                font:14px/20px sans-serif;
+                color: #555555;
+            }
+            #contact h1{
+                padding: 20px;
+                padding-bottom: 0px;
+                margin: 0px;
+                font:18px sans-serif;
+                color: #555555;
+            }
+        </style>
+    </head>
+    	<body>
+            <div class="nav">
+                    <ul id="navmenu">
+                        <li><a href="index.html">Pagrindinis</a></li>
+                        <li><a href="#">Apie mus</a></li>
+                        <li><a href="#">Kainodara <span id="arrow">&#9660;</span></a>
+                            <ul id="sub">
+                                <li><a href="#">Privatūs klientai</a></li>
+                                <li><a href="#">Verslo klientai</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="client">
+                        <li><a href="signin.php">Klientų zona</a></li>
+                    </ul>
+            </div>
+            <div class="banner">
+                <div class="social">
+                    <a href="http://facebook.com" target="_blank"><img src="fb_icon_325x325.png" alt="facebook"/></a>
+                    <a href="http://twitter.com" target="_blank"><img style="border-bottom-left-radius: 5px;" src="ios_homescreen_icon.png" alt="twitter"/></a>
+                </div>
+                <div class="header">
+                    <h1>Greitas ir patikimas IT palaikymas</h1>
+                    <p>Techninių problemų sprendimai naudojant nuotolinę prieigą.</p>
+                    <a href="article.php">Sužinokite daugiau</a>
+                </div>
+            </div>
+            <div class="content">
+                <div id="c1">
+                    <h1>Tarp platforminis lankstumas</h1><p>Galime sutaisyti beveik kiekvieną kompiuterį, nesvarbu tai Windows, Mac, Linux, iOS, BlackBerry ar Android.</p></div>
+                <div id="c2"><h1>Saugumas</h1><p>Užtikriname kliento duomenų ir privatumo saugumą. Jokia asmeninė informaciją nebus perduota trečiosioms šalims. </p></div>
+                <div id="c3"><h1>Bendradarbiavimas</h1><p>Įvairių sričių sertifikuoti IT profesionalai, galintys išspręsti bet kokio sudėtingumo problemas. Kiekvieną nuotolinė sesiją yra irašomą, norint užtikrinti atliktų darbų kokybę. </p></div>
+            </div>
+            <div class="footer">
+                <div id="contact"><h1>Kontaktinė informacija</h1><p>Karolina Kizaitė<br>Telefonas: +37068320466<br>Darbininkų g. 16-11<br>LT-02170<br>Vilnius</p></div>
+            </div>
+    	</body>
+</html>

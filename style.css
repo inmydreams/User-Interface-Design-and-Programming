@@ -1,0 +1,88 @@
+body{
+    background-color: #11a6d4;
+}
+#login{
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: #1992b7;
+    width: 350px;
+    height: 295px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#login-box{
+    background-color: #fdfdfd;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    overflow:hidden;
+}
+#label{
+    background-color: gainsboro;
+    height: 45px;
+    text-align: center;
+    font: bold 14px/45px sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid white;
+    box-shadow: 1px 0px 3px black;
+    color: #555555;
+    text-shadow: 1px 0px 1px white;
+}
+.input{
+    margin: 20px;
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    background-color: #f2f5f7;
+    border-radius: 5px;
+}
+.input input{
+    width:300px;
+    height: 35px;
+    padding-left: 5px;
+    font: 12px sans-serif;
+    color:#555555;
+    border-radius: 5px;
+    border: 1px solid #bfc4c6;
+    box-sizing: border-box;
+}
+.input:hover{
+    background-color: #e0f1fc;
+}
+.input input:hover{
+    border-color: #7dc6dd;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    display: inline-block;
+    width: 110px;
+    font: 12px sans-serif;
+    text-decoration: none;
+    color:#555555;
+    text-align: center;
+}
+.button{
+    float: right;
+    width:100px;
+    height: 30px;
+    
+    padding: 25px;
+}
+.button input{
+    background-color: #e0f1fc;
+    font:bold 12px sans-serif;
+    border-radius:20px;
+    text-shadow: 0px 1px 0px white;
+    border:1px solid #9eb9c3;
+    color: #527980;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+::-webkit-input-placeholder {
+    color:#555555;
+}
